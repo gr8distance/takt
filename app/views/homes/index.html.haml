@@ -1,0 +1,32 @@
+%section
+  %article.slider
+    %ul.slides
+      %li
+        = image_tag "http://i.imgur.com/vYCdL.jpg"
+        .caption.center-align
+          %h3 どんな仕事も
+          %h4 心をこめて。
+
+  .row
+    %article.col.s12.l3
+      %ul.collection.with-header
+        %li.collection-header
+          %h5 New Topicks
+        - 6.times do |i|
+          %li.collection-item.avatar
+            %i.fa.fa-play.circle
+            %span.title= "Topicks #{i}"
+            %p Here is description!
+            = link_to "Read more...",""
+          
+    %article.col.s12.l9
+      .container
+        %h1 Think different
+        %p= simple_format(@short)
+
+
+        %h1 Original's
+        %p= simple_format @original
+
+
+

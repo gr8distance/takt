@@ -1,0 +1,12 @@
+%header
+  %nav.nav-wrapper.blue.accent-3
+    .container
+      = link_to :root,class: "brand-logo waves-effect waves-light" do
+        /%i.fa.fa-play
+        タクト
+
+      %ul.hide-on-med-and-down.right#nav-mobile
+        - 3.times do |i|
+          %li= link_to "Header menu","",class: "waves-effect"
+        %li= link_to "Company",company_index_path,class: "waves-effect"
+
